@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# Jk Tours - Travel Agency Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to **Jk Tours**, a static travel agency website built with React.js and CSS. The website showcases a variety of travel destinations and packages, and includes features like inquiry forms and quick contact options.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Responsive Design**: Fully responsive and optimized for various devices.
+- **Destination Display**: Highlight travel destinations with detailed package pages.
+- **Contact Options**: 
+  - WhatsApp Icon: Redirects users to WhatsApp for inquiries.
+  - Phone Icon: Allows users to initiate a direct call.
+- **Inquiry Form**: A form that sends email inquiries to the client.
+- **Gallery**: A dedicated page to showcase destination photos.
 
-### `npm start`
+## Pages
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Home**: Welcome page with an overview of services.
+2. **Destinations**: Displays all travel destinations.
+3. **Packages**: Detailed pages for individual travel packages.
+4. **Gallery**: Visual showcase of destinations and travel moments.
+5. **Contact**: Inquiry form and quick contact details.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- **Frontend**: React.js, CSS
+- **Email Integration**: EmailJS  for inquiry form functionality
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Folder Structure
 
-### `npm run build`
+```
+travelagency/
+├── public/
+│   ├── index.html
+│   ├── manifest.json
+│   └── assets/        # Images and other assets
+├── src/
+│   ├── components/    # Reusable components (Header, Footer, etc.)
+│   ├── pages/         # Page-specific components (Home, Destinations, etc.)
+│   ├── App.js         # Main application file
+│   ├── App.css        # Global styles
+│   └── index.js       # Entry point
+├── .gitignore         # Git ignore file
+├── package.json       # Project metadata and dependencies
+└── README.md          # Project documentation
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Setup and Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/<organization-name>/travelagency.git
+   cd travelagency
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+3. **Run the Application**:
+   ```bash
+   npm start
+   ```
+   The website will be available at `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Build for Production**:
+   ```bash
+   npm run build
+   ```
+   The production-ready files will be available in the `build/` directory.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contribution Guidelines
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Fork the repository and create a feature branch.
+2. Commit your changes with meaningful commit messages.
+3. Push the branch and create a pull request.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## License
 
-## Learn More
+This project is licensed under the [MIT License](LICENSE).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contact
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+For any inquiries or issues, please contact:
+- **Email**: [tiwaridevanshtech1@gmail.com](mailto:tiwaridevanshtech1@gmail.com)
+- **Email**: [mehvishkanha192@gmail.com](mailto:mehvishkanha192@gmail.com)
+- **GitHub**: [https://github.com/oryxltd](https://github.com/oryxltd)
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
