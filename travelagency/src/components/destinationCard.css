@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.destination-card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.destination-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.destination-card:hover .destination-image {
+    transform: scale(1.1);
+    /* slight zoom on hover */
+}
+
+.destination-overlay {
+    color: white;
+    position: absolute;    
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    overflow: hidden;
+    opacity: 1;
+}
+
+.destination-overlay:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.destination-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.destination-data p {
+    margin: 5px 10px;
+}
+
+.destination-name{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.destination-price {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.destination-details {
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
