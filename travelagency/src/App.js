@@ -5,6 +5,7 @@ import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 
 import './App.css';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         </Routes>
       </Router>
 
+      <Footer />
       
     </div>
   );
