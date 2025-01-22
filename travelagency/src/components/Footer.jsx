@@ -50,7 +50,7 @@ function Footer() {
 
       <div className="footer-bottom">
         <p>© 2025 Travel Company. All Rights Reserved.</p>
-      </div>
+      </div> 
 
     </footer>
 
