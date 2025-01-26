@@ -44,7 +44,7 @@
 /* global end */
 
 .homepage {
-    padding: 0 2rem;
+    padding: 60px 2rem; 
 }
 
 .homepage-content{
@@ -215,7 +215,7 @@
 
 .destination-content {
     border: 2px solid green;
-    height: 150vh;
+    height: 135vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

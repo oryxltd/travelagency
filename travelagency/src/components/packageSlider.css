@@ -1,0 +1,17 @@
+.package-slider-container {
+    width: 100%; 
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .package-slider-track {
+    display: flex;
+    flex-direction: row;
+    gap: 35px; 
+    padding: 2rem;
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+  }
+  
+  .package-card {
+    flex-shrink: 0; /* Prevent cards from shrinking */
+  }

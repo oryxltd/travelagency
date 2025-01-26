@@ -4,7 +4,9 @@ import "../pages/home.css";
 import tempImg from "../assets/images/tempImg.jpg";
 import Button from "../components/Button";
 import DestinationSlider from "../components/DestinationSlider";
-import PackageCards from "../components/PackageCards";
+// import PackageCard from "../components/PackageCard";
+import PackageSlider from "../components/PackageSlider";
+import WhyChooseUs from "../components/WhyChooseUs";
 
 const destinations = [
   {
@@ -48,6 +50,64 @@ const destinations = [
     name: "Destination 3",
     price: "$3000",
     details: "Details about destination 3",
+  },
+];
+
+//  // image, DistrictName, MainLocationName, DurationinDays, StartDate
+const packages = [
+  {
+    image:
+      "https://plus.unsplash.com/premium_photo-1672762542894-caaa8d4f0a77?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
+      DistrictName: "Destination 5",
+      MainLocationName: "Destination 1",
+
+      DurationinDays: "$4",
+      StartDate: "2022-08-15",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1638135644120-5f024c0dcae7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
+      DistrictName: "Destination 6",
+      MainLocationName: "Destination 2",
+
+      DurationinDays: "3",
+      StartDate: "2022-08-15",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1735668219806-7ee1de68b969?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
+      DistrictName: "Destination 1",
+      MainLocationName: "Destination 3",
+
+      DurationinDays: "4",
+      StartDate: "2022-08-15",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1735668219806-7ee1de68b969?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
+      DistrictName: "Destination 2",
+      MainLocationName: "Destination 4",
+
+      DurationinDays: "2",
+      StartDate: "2022-08-15",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1735668219806-7ee1de68b969?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
+      DistrictName: "Destination 3",
+      MainLocationName: "Destination 5",
+
+      DurationinDays: "4",
+      StartDate: "2022-08-15",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1735668219806-7ee1de68b969?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
+      DistrictName: "Destination 4",
+      MainLocationName: "Destination 6",
+
+      DurationinDays: "5",
+      StartDate: "2022-08-15",
   },
 ];
 
@@ -122,7 +182,7 @@ function Home() {
           </p>
           <div className="destination-slider-container">
           <DestinationSlider
-            destinations={destinations}
+            destinations={destinations} 
           />
           </div>
           
@@ -134,11 +194,13 @@ function Home() {
           </p>
 
           <div className="package-cards-container">
-            <PackageCards />
+            <PackageSlider packages={packages} />
           </div>
         </div>
 
-        <div className="features-content"></div>
+        <div className="features-content">
+          <WhyChooseUs />
+        </div>
       </div>
     </div>
   );

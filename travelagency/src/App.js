@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import Destination from './pages/Destination';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
+import PackageDetails from './pages/PackageDetails';
 
 import './App.css';
 
@@ -16,6 +17,7 @@ function App() {
           <Route path="/destination" element={<Destination />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/package/:id" element={<PackageDetails />} />
         </Routes>
       </Router>
       
