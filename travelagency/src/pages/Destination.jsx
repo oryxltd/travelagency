@@ -1,11 +1,9 @@
-// Devansh is working on this file
-
 import React from "react";
-// import Navbar from '../components/Navbar';
-import DestinationCard from "../components/DestinationCard";
+// import DestinationCard from "../components/DestinationCard";
 import Navbar from "../components/Navbar";
+import "../pages/destination.css";
+import DestinationCard from "../components/DestinationCard";
 
-// destination card testing data
 const destinations = [
   {
     image:
@@ -28,34 +26,97 @@ const destinations = [
     price: "$3000",
     details: "Details about destination 3",
   },
+  {
+    image:
+      "https://images.unsplash.com/photo-1735668219806-7ee1de68b969?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
+    name: "Destination 4",
+    price: "$3000",
+    details: "Details about destination 3",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1735668219806-7ee1de68b969?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
+    name: "Destination 5",
+    price: "$3000",
+    details: "Details about destination 3",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1735668219806-7ee1de68b969?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
+    name: "Destination 6",
+    price: "$3000",
+    details: "Details about destination 3",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1735668219806-7ee1de68b969?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
+    name: "Destination 7",
+    price: "$3000",
+    details: "Details about destination 3",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1735668219806-7ee1de68b969?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
+    name: "Destination 8",
+    price: "$3000",
+    details: "Details about destination 3",
+  },
 ];
 
 const Destination = () => {
   return (
     <div>
       <Navbar />
-      <div
-        style={{
-          display: "flex",
-          gap: ".5em",
-          padding: "10px",
-          alignItems: "center",
-        }}
-      >
-        {destinations.map((destination, index) => (
-          <DestinationCard
-            key={index}
-            image={destination.image}
-            name={destination.name}
-            price={destination.price}
-            details={destination.details}
-          />
-        ))}
+      {/* Hero Section */}
+      <div className="destination-container">
+        <div className="destination-content_page">
+          <h1>Destination</h1>
+          <p>Explore the world with us and discover amazing places.</p>
+        </div>
+        {/* Explore All Destinations Section */}
+        <div className="explore-destinations">
+          <h2>Explore All Destinations</h2>
 
-        {/* destination card testing start */}
+          <div className="destination-grid">
+            {destinations.map((destination) => (
+              <DestinationCard image={destination.image} name={destination.name} price={destination.price} details={destination.details}/>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
 export default Destination;
+
+// section one
+
+// return (
+//   <div>
+//     <Navbar />
+//     <div
+//       style={{
+//         display: "flex",
+//         gap: ".5em",
+//         padding: "10px",
+//         alignItems: "center",
+//       }}
+//     >
+//       {destinations.map((destination, index) => (
+//         <DestinationCard
+//           key={index}
+//           image={destination.image}
+//           name={destination.name}
+//           price={destination.price}
+//           details={destination.details}
+//         />
+//       ))}
+
+//       {/* destination card testing start */}
+//     </div>
+//   </div>
+// );
+// };
+
+// export default Destination;

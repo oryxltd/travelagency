@@ -192,7 +192,6 @@ function Home() {
             offering unparallel experience , personlised iternerraies and
             unforgettable memories
           </p>
-
           <div className="package-cards-container">
             <PackageSlider packages={packages} />
           </div>
