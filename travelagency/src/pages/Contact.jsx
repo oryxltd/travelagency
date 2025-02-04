@@ -13,7 +13,6 @@ import ContactCard from "../components/ContactCard";
 import emailjs from "emailjs-com";
 
 function Contact() {
-
   const form = useRef(null);
 
   const sendEmail = (e) => {
@@ -37,7 +36,6 @@ function Contact() {
         }
       );
   };
-
 
   const [expandedQuestion, setExpandedQuestion] = useState(null);
 
@@ -69,7 +67,6 @@ function Contact() {
   ];
 
   // Function to send email
-  
 
   return (
     <div className="contact__page">
@@ -174,7 +171,7 @@ function Contact() {
         {/* Card components */}
         <div className="cards__container">
           <ContactCard
-            icon={FaPhone}
+            icon= {FaPhone}
             heading="Phone"
             description="Jk Tours offers a seamless and intutive experience for travelers seeking their next adventure, with phone call support."
             contact="+91 810 3868 078"
@@ -198,55 +195,73 @@ function Contact() {
           {/* Left Column */}
           <div className="contactContent__left">
             <h4>Get in Touch</h4>
-            <p className="contactContent__subheading">
-              Feel Free to Contact With Us
-            </p>
+            <h2 className="contactContent__subheading">
+              Feel Free to Contact <br /> With Us
+            </h2>
             <p className="contactContent__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              For any inquires or assistance, feel free to reach out to us. Our team is available 24/7 to assist you with any queries you may have.
+              We are here to help you plan your next adventure and make it a memorable experience.
             </p>
           </div>
           {/* Right Column - Form */}
+
           <div className="contactContent__right">
             <form ref={form} onSubmit={sendEmail}>
-              <div className="form__group">
-                <label htmlFor="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" required />
+              <div className="form__row">
+                <div className="form__group">
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    required
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div className="form__group">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="Email Address"
+                  />
+                </div>
               </div>
-              <div className="form__group">
-                <label htmlFor="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName" required />
+              <div className="form__row">
+                <div className="form__group">
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    placeholder="Phone Number"
+                  />
+                </div>
+                <div className="form__group">
+                  <label htmlFor="date">Desired Date</label>
+                  <input type="date" id="date" name="date" required />
+                </div>
               </div>
-              <div className="form__group">
-                <label htmlFor="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" required />
+              <div className="form__row">
+                <div className="form__group">
+                  <label htmlFor="people">Number of People</label>
+                  <input type="number" id="people" name="people" required />
+                </div>
+                <div className="form__group">
+                  <label htmlFor="destination">Destination</label>
+                  <select id="destination" name="destination" required>
+                    <option value="paris">Paris</option>
+                    <option value="new-york">New York</option>
+                    <option value="tokyo">Tokyo</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
               </div>
-              <div className="form__group">
-                <label htmlFor="destination">Destination</label>
-                <input
-                  type="text"
-                  id="destination"
-                  name="destination"
-                  required
-                />
+              <div className="form__row">
+                <button type="submit" className="submit__button">
+                  Submit Now
+                </button>
               </div>
-              <div className="form__group">
-                <label htmlFor="people">Number of People</label>
-                <input type="number" id="people" name="people" required />
-              </div>
-              <div className="form__group">
-                <label htmlFor="date">Desired Date</label>
-                <input type="date" id="date" name="date" required />
-              </div>
-              <div className="form__group">
-                <label htmlFor="message">Message</label>
-                <textarea id="message" name="message" rows="4" required />
-              </div>
-              <button type="submit" className="submit__button">
-                Submit Now
-              </button>
             </form>
           </div>
         </div>
@@ -257,8 +272,3 @@ function Contact() {
 
 export default Contact;
 
-// next task to done
-// 1. Add the necessary CSS to style the Contact page.
-// setup email funtionality using emailjs
-// responsive ness
-// package details page

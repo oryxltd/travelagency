@@ -13,7 +13,7 @@
   
   .contact-icon {
     font-size: 30px;
-    color: #43535e;
+    color: orange;
     margin-bottom: 10px;
   }
   
@@ -26,12 +26,14 @@
   .contact-description {
     font-size: 14px;
     color: #555;
+    opacity: 0.7;
     margin-bottom: 10px;
   }
   
   .contact-info {
-    font-size: 16px;
+    opacity: 0.7;
+    font-size: 13px;
     font-weight: bold;
-    color: #333;
+    color: orange;
   }
   

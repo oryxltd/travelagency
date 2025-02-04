@@ -28,8 +28,8 @@ const DestinationSlider = ({ destinations }) => {
                 key={index}
                 image={destinations.image} 
                 name={destinations.name}
-                price={destinations.price}
-                details={destinations.details}
+                details={destinations.details} 
+                rating={destinations.rating}
             />
         ))}
       </div>
