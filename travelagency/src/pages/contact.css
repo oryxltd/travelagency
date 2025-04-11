@@ -1,8 +1,8 @@
 .contact__page{
-    margin-top: 60px;
+  margin: 60px 2rem 0 2rem;
     padding: 0 2rem; 
 }
-
+ 
 /* General Styles */
 * {
     box-sizing: border-box;
@@ -73,6 +73,83 @@
   .about__list-item {
     margin-bottom: 10px;
   }
+
+  /* End of About Us Section */
+
+  /* about us responsive start */
+  @media (max-width: 1024px) {
+    .about__heading {
+      font-size: 2rem;
+    }
+  
+    .about__content {
+      height: auto;
+      padding: 2rem 1rem;
+    }
+  
+    .about__image {
+      width: 100%;
+      height: 300px;
+    }
+  
+    .about__text {
+      padding: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about__heading {
+      font-size: 1.8rem;
+    }
+  
+    .about__content {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      padding: 1.5rem 1rem;
+    }
+  
+    .about__image {
+      width: 100%;
+      height: 250px;
+    }
+  
+    .about__subheading {
+      font-size: 1.5rem;
+    }
+  
+    .about__description,
+    .about__list-item {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    
+    .contact__page {
+      padding: 0 1rem;
+      margin: 0;
+    }
+  
+    .about__heading {
+      font-size: 1.5rem;
+    }
+  
+    .about__image {
+      height: 200px;
+    }
+  
+    .about__subheading {
+      font-size: 1.3rem;
+    }
+  
+    .about__description,
+    .about__list-item {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* about us responsive end */
   
   /* About Content Section */
 
@@ -93,6 +170,55 @@
     margin-bottom: 20px;
   }
   
+  /* responsive */
+
+@media (max-width: 1024px) {
+  .aboutContent__section {
+    padding: 2rem;
+  }
+
+  .aboutContent__section h4 {
+    font-size: 1.4rem;
+  }
+
+  .aboutContent__section p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutContent__section {
+    padding: 1.5rem;
+  }
+
+  .aboutContent__section h4 {
+    font-size: 1.2rem;
+  }
+
+  .aboutContent__section p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutContent__section {
+    padding: 1rem;
+  }
+
+  .aboutContent__section h4 {
+    font-size: 1.1rem;
+  }
+
+  .aboutContent__section p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+}
+
+  /* About Content Section  end*/
+  
+
+
   /* FAQ Section */
   .faqSection{
     border: 2px solid purple;
@@ -165,7 +291,79 @@
     opacity: 1; /* Show answer when expanded */
   }
 
-    /* Contact Section */
+  /* responsive */
+
+  @media (max-width: 1024px) {
+    .faq__grid {
+      grid-template-columns: 1fr; /* Single column layout on medium screens */
+    }
+  
+    .faq__heading {
+      font-size: 1.6rem;
+    }
+  
+    .faq__question {
+      font-size: 0.95rem;
+    }
+  
+    .faq__answer {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .faqSection {
+      padding: 2rem;
+    }
+  
+    .faq__heading {
+      font-size: 1.5rem;
+    }
+  
+    .faq__item {
+      padding: 12px;
+      max-height: 55px;
+    }
+  
+    .faq__item--expanded {
+      padding-bottom: 18px;
+    }
+  
+    .faq__question {
+      font-size: 0.9rem;
+    }
+  
+    .faq__answer {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .faqSection {
+      padding: 1.5rem 1rem;
+    }
+  
+    .faq__heading {
+      font-size: 1.4rem;
+    }
+  
+    .faq__question {
+      font-size: 0.85rem;
+    }
+  
+    .faq__answer {
+      font-size: 0.85rem;
+    }
+  
+    .faq__icon {
+      font-size: 0.9rem;
+    }
+  }
+  
+
+  /* faq section end */
+
+    /* Contact Section  start*/
     .contactUs__section{
         border: 2px solid orange;
         padding: 2.5rem 0;
@@ -218,6 +416,52 @@
         color: rgb(255, 255, 255);
         z-index: 1;
       }
+
+      /* responsiveness */
+
+      @media (max-width: 1024px) {
+        .contactHero__heading {
+          font-size: 30px;
+        }
+      
+        .contactHero__subheading {
+          font-size: 18px;
+        }
+      }
+      
+      @media (max-width: 768px) {
+        .contactHero__content {
+          height: 40vh;
+          padding: 1rem;
+        }
+      
+        .contactHero__heading {
+          font-size: 26px;
+          text-align: center;
+        }
+      
+        .contactHero__subheading {
+          font-size: 16px;
+          text-align: center;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .contactHero__content {
+          height: 35vh;
+          padding: 1rem;
+        }
+      
+        .contactHero__heading {
+          font-size: 22px;
+        }
+      
+        .contactHero__subheading {
+          font-size: 14px;
+        }
+      }
+      
+    /* Contact Section  end*/
 
 /* contact cards section */
 
@@ -326,3 +570,87 @@
     .submit__button:hover {
       background-color: #45a049;
     }
+
+    /*  responsive ness */
+
+    @media (max-width: 1024px) {
+      .cards__container {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+      }
+    
+      .contactContent__container {
+        flex-direction: column;
+        height: auto;
+      }
+    
+      .contactContent__left,
+      .contactContent__right {
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
+    
+      .contactContent__left h2 {
+        font-size: 2rem;
+        line-height: 40px;
+      }
+    
+      .submit__button {
+        width: 60%;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .cards__container {
+        padding: 1rem;
+        margin: 1rem 0;
+      }
+    
+      .contactContent__left h2 {
+        font-size: 1.8rem;
+        line-height: 35px;
+      }
+    
+      .form__row {
+        flex-direction: column;
+      }
+    
+      .form__group {
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+    
+      .submit__button {
+        width: 100%;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .cards__container {
+        padding: 1rem 0.5rem;
+      }
+    
+      .contactContent__container {
+        padding: 1rem;
+      }
+    
+      .contactContent__left h2 {
+        font-size: 1.5rem;
+        line-height: 30px;
+      }
+    
+      .contactContent__left h4 {
+        font-size: 1rem;
+      }
+    
+      label {
+        font-size: 0.9rem;
+      }
+    
+      input,
+      textarea {
+        font-size: 0.9rem;
+      }
+    }
+    

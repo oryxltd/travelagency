@@ -1,16 +1,14 @@
-/* destinationCard.css 
-Dark : #08140F
-Primary : #40A578
 
-*/
 .destination-card {
-    width: 320px; /* Adjust as needed */
+    width: 290px; /* Adjust as needed */
     overflow: hidden; /* Prevents image from overflowing rounded corners */
     transition: transform 0.2s ease; /* Smooth hover effect */
     background-color: #1b3429;
     /* Card background color */
     color: #fff;
-}
+    border: 1px solid grey;
+    border-radius: 8px;
+} 
   
   .destination-card:hover {
     transform: translateY(-5px); /* Lift up on hover */
@@ -18,14 +16,19 @@ Primary : #40A578
   
   .destination-card-top {
     position: relative; /* For positioning the overlay */
+    
   }
-  
-  .destination-image {
+
+  .destination-card-top img{
     width: 100%;
     height: 200px; /* Adjust as needed */
     object-fit: cover; /* Ensures image covers the area */
     display: block; /* Prevents a small gap below the image */
     border-radius: 10px;
+  }
+  
+  .destination-image {
+     
   }
     
   
@@ -33,8 +36,7 @@ Primary : #40A578
     padding: 15px;
     display: flex;
     flex-direction: column;
-    height: 180px; /* Set a fixed height for consistent card sizes */
-
+    height: 165px; /* Set a fixed height for consistent card sizes */
   }
   
   .destination-bottom-head {
@@ -93,3 +95,80 @@ Primary : #40A578
     color: #37dc42;
 
   }
+
+  /* responsive ness */
+
+  /* Responsive Destination Card Styles */
+
+@media (max-width: 1024px) {
+  .destination-card {
+    width: 260px;
+  }
+
+  .destination-card-bottom {
+    height: auto;
+  }
+
+  .destination-image {
+    height: 180px;
+  }
+
+  .destination-details {
+    -webkit-line-clamp: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .destination-card {
+    width: 220px;
+  }
+
+  .destination-image {
+    height: 160px;
+  }
+
+  .destination-name {
+    font-size: 1rem;
+  }
+
+  .destination-rating {
+    font-size: 0.9rem;
+  }
+
+  .destination-details {
+    font-size: 0.85rem;
+    -webkit-line-clamp: 2;
+  }
+
+  .arrowButton {
+    padding: 2px 0.8rem;
+  }
+
+  .arrow-icon {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) { 
+  .destination-card {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .destination-image {
+    height: 180px;
+  }
+
+  .destination-card-bottom {
+    padding: 10px;
+  }
+
+  .destination-name {
+    font-size: 1rem;
+  }
+
+  .destination-details {
+    font-size: 0.85rem;
+    -webkit-line-clamp: 2;
+  }
+}

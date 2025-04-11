@@ -37,3 +37,69 @@
     color: orange;
   }
   
+  /* responsive ness */
+
+  @media (max-width: 1024px) {
+    .contact-card {
+      width: 260px;
+      height: auto;
+      padding: 18px;
+    }
+  
+    .contact-heading {
+      font-size: 18px;
+    }
+  
+    .contact-description {
+      font-size: 13px;
+    }
+  
+    .contact-info {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contact-card {
+      width: 220px;
+      padding: 15px;
+    }
+  
+    .contact-icon {
+      font-size: 26px;
+    }
+  
+    .contact-heading {
+      font-size: 16px;
+    }
+  
+    .contact-description {
+      font-size: 12px;
+    }
+  
+    .contact-info {
+      font-size: 11px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-card {
+      width: 90%;
+      margin: 0 auto;
+      padding: 15px;
+    }
+  
+    .contact-icon {
+      font-size: 24px;
+    }
+  
+    .contact-heading {
+      font-size: 15px;
+    }
+  
+    .contact-description,
+    .contact-info {
+      font-size: 11px;
+    }
+  }
+  

@@ -1,7 +1,10 @@
 :root {
-    --primary-color: #f9f9f9;
-    --secondary-color: #f9f9f9;
-    --third-color: #f9f9f9;
+    --color-primary: #706D54;     /* deep olive - main brand color */
+    --color-secondary: #A08963;   /* golden beige - buttons, hover highlights */
+    --color-accent: #C9B194;      /* light tan - cards, secondary text */
+    --color-background: #DBDBDB;  /* soft grey - backgrounds */
+    --color-text: #1a1a1a;        /* dark fallback for text on light background */
+    --color-white: #ffffff;       /* white for contrast */
     --font-family: 'Poppins', sans-serif;
     --big-text: 40px;
     --border-radius: 10px;

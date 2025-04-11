@@ -1,52 +1,80 @@
 .destination-container {
     border: 2px solid red;
-    margin: 60px 2rem;
+    margin: 60px 2rem 0 2rem;
 }
 
 .destination-content_page {
-    /* border: 2px solid green; */
+    border: 2px solid blue;
     height: 60vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center; /* Changed from flex-start to center for better alignment */
     align-items: center;
     padding: 1.5rem 0;
-}
- 
-.explore-destinations {
-    /* border: 2px solid blue; */
-    background-color: #1b3429;
+
+    /* New background styles */
+    background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e'); /* Replace with your own if needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
-    padding: 1rem;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6); /* Makes text readable */
+}
+
+.explore-destinations {
+    background: linear-gradient(to right, #102820, #1b3429);
+    color: #ffffff;
+    padding: 3rem 2rem;
+    /* border-radius: 1rem; */
+    /* margin-top: 2rem; */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* border: 5px solid red; */
 }
 
 .explore-destinations h2 {
-    font-size: 2.5rem;
-    text-align:left;
-    margin: 0 1.5rem;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+    font-weight: 700;
+    color: #f4f4f4;
+    border-left: 4px solid #4ddf9c;
+    padding-left: 1rem;
 }
 
-.explore-destinations p{
-    font-size: .9rem;
-    margin-bottom: 20px;
-    text-align:left;
-    margin: .5rem 1.5rem;
-    opacity: 0.6;
-} 
+.explore-destinations p {
+    font-size: 1rem;
+    margin: 0 1.5rem 2rem 1.5rem;
+    line-height: 1.6;
+    opacity: 0.85;
+    color: #e0e0e0;
+}
 
 .destination-grid {
-    /* border: 2px solid rgb(228, 46, 228); */
-    /* background-color: #08140F; */
-    background-color: #1b3429;
-
-    color: white;
-    height: 100%;
+    background-color: transparent;
     width: 100%;
-    padding: 2rem 1rem;
-    margin: .5rem 0;
+    padding: 1rem 1.5rem;
+    margin-top: 1.5rem;
+
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    row-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    align-items: stretch;
+    box-sizing: border-box;
 }
+
+.destination-content_page h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.destination-content_page p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    text-align: center;
+}
+
+
+
+

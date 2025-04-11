@@ -1,17 +1,44 @@
 .package-slider-container {
-    width: 100%; 
-    margin: 0 auto;
-    overflow: hidden;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding: 1rem 0;
+}
+
+.package-slider-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar on Chrome/Safari */
+}
+
+.package-slider-track {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  padding: 0 1rem;
+  flex-wrap: nowrap;
+  width: max-content; /* Crucial for proper scroll */
+}
+
+.package-card {
+  flex-shrink: 0;
+  width: 300px;
+}
+
+@media (max-width: 480px) {
+  .package-slider-container {
+    scroll-snap-type: x mandatory;
   }
-  
+
   .package-slider-track {
-    display: flex;
-    flex-direction: row;
-    gap: 35px; 
-    padding: 2rem;
-    transition: transform 0.5s ease-in-out; /* Smooth transition */
+    gap: 0;
+    scroll-snap-type: x mandatory;
   }
-  
+
   .package-card {
-    flex-shrink: 0; /* Prevent cards from shrinking */
+    width: 100vw;
+    scroll-snap-align: start;
+    padding: 0 1rem;
   }
+}
+

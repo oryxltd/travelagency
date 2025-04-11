@@ -9,7 +9,7 @@ const DestinationCard = ({ image, name, details, rating }) => {
       <div className="destination-card-top">
         <img src={image} alt={name} className="destination-image" />
       </div>
-      <div className="destination-card-bottom">
+      <div className="destination-card-bottom"> 
         <div className="destination-bottom-head">
           <h3 className="destination-name">{name}</h3>
           <div className="destination-rating">

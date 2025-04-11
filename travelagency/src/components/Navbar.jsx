@@ -17,15 +17,29 @@ export default function Navbar() {
   const [hidden, setHidden] = useState(false);
   const [lastScrollTop, setLastScrollTop] = useState(0);
 
+  // scrolled function
+  const [scrolled, setScrolled] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
+
       const scrollTop = window.scrollY;
+
       if (scrollTop > lastScrollTop) {
         setHidden(true);
       } else {
         setHidden(false);
       }
+
+      // setScrolled(scrollTop > 50); // Set scrolled to true if scrolled down  
       setLastScrollTop(scrollTop);
+
+      // add background if not at the top
+      if (scrollTop > 50) {
+        document.querySelector(".navbar").classList.add("scrolled");
+      } else {
+        document.querySelector(".navbar").classList.remove("scrolled");
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -35,8 +49,16 @@ export default function Navbar() {
     };
   }, [lastScrollTop]);
 
+  // hide funtion end
+
+  
+
   return (
-    <div className={`navbar ${hidden ? "hidden" : ""}`}>
+    <div
+      className={`navbar ${hidden ? "hidden" : ""} ${
+        scrolled ? "scrolled" : ""
+      }`}
+    >
       <div className="logo">
         <img src={tempImg} alt="logoImg" />
         <h5>JK Tours</h5>
@@ -51,9 +73,6 @@ export default function Navbar() {
               <Link to="/destination">Destination</Link>
             </li>
             <li>
-              <Link to="/gallery">Gallery</Link>
-            </li>
-            <li>
               <Link to="/contact">Contact</Link>
             </li>
           </ul>
@@ -64,7 +83,7 @@ export default function Navbar() {
       </div>
       <div className="whatsapp">
         <a href="https://wa.me/+917581867478" target="_blank" rel="noreferrer">
-          <FaWhatsapp size={30} color="green"/>
+          <FaWhatsapp size={30} color="green" />
         </a>
       </div>
     </div>

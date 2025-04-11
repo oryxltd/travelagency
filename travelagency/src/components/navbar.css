@@ -8,12 +8,15 @@
     left: 0;
     width: 100%;
     z-index: 1000;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.navbar.hidden {
-    opacity: 0;
-}
+    transition: transform 0.4s ease-in-out, background-color 0.3s ease;
+    background-color: transparent;
+  }
+  
+  .navbar.hidden {
+    transform: translateY(-100%);
+    /* Smoothly slides it up out of view */
+  }
+  
 
 .logo{
     display: flex;
@@ -49,7 +52,12 @@
     z-index: 100;
 }
 
-
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+  }
+  
 
 /* Mobile Styles */
 @media screen and (max-width: 768px) {

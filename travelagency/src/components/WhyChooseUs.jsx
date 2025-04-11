@@ -13,7 +13,7 @@ const WhyChooseUs = () => {
         <div className="text-content">
           <h2>Why Choose Us</h2>
           <p>Choose us for your travel needs because we offer personalized itineraries, unbeatable deals, and 24/7 customer support, ensuring a seamless and unforgettable journey every time.</p>
-
+ 
           <ul className="features">
             <li> <span><MdPeople size={22} /> </span>Every place and activity is thoughtfully selected by our team.</li>
             <li> <span><FaDollarSign size={22} /></span>   We are provide different type of tour plan.</li>

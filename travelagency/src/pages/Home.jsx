@@ -2,11 +2,13 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import "../pages/home.css";
 import tempImg from "../assets/images/tempImg.jpg";
+// import safari from "../assets/images/safari.jpg";
 import Button from "../components/Button";
 import DestinationSlider from "../components/DestinationSlider";
 // import PackageCard from "../components/PackageCard";
 import PackageSlider from "../components/PackageSlider";
 import WhyChooseUs from "../components/WhyChooseUs";
+import Footer from "../components/Footer";
 
 const destinations = [
   {
@@ -58,56 +60,56 @@ const packages = [
   {
     image:
       "https://plus.unsplash.com/premium_photo-1672762542894-caaa8d4f0a77?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
-      DistrictName: "Destination 5",
-      MainLocationName: "Destination 1",
+    DistrictName: "Destination 5",
+    MainLocationName: "Destination 1",
 
-      DurationinDays: "$4",
-      StartDate: "2022-08-15",
+    DurationinDays: "$4",
+    StartDate: "2022-08-15",
   },
   {
     image:
       "https://images.unsplash.com/photo-1638135644120-5f024c0dcae7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
-      DistrictName: "Destination 6",
-      MainLocationName: "Destination 2",
+    DistrictName: "Destination 6",
+    MainLocationName: "Destination 2",
 
-      DurationinDays: "3",
-      StartDate: "2022-08-15",
+    DurationinDays: "3",
+    StartDate: "2022-08-15",
   },
   {
     image:
       "https://images.unsplash.com/photo-1735668219806-7ee1de68b969?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
-      DistrictName: "Destination 1",
-      MainLocationName: "Destination 3",
+    DistrictName: "Destination 1",
+    MainLocationName: "Destination 3",
 
-      DurationinDays: "4",
-      StartDate: "2022-08-15",
+    DurationinDays: "4",
+    StartDate: "2022-08-15",
   },
   {
     image:
       "https://images.unsplash.com/photo-1735668219806-7ee1de68b969?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
-      DistrictName: "Destination 2",
-      MainLocationName: "Destination 4",
+    DistrictName: "Destination 2",
+    MainLocationName: "Destination 4",
 
-      DurationinDays: "2",
-      StartDate: "2022-08-15",
+    DurationinDays: "2",
+    StartDate: "2022-08-15",
   },
   {
     image:
       "https://images.unsplash.com/photo-1735668219806-7ee1de68b969?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
-      DistrictName: "Destination 3",
-      MainLocationName: "Destination 5",
+    DistrictName: "Destination 3",
+    MainLocationName: "Destination 5",
 
-      DurationinDays: "4",
-      StartDate: "2022-08-15",
+    DurationinDays: "4",
+    StartDate: "2022-08-15",
   },
   {
     image:
       "https://images.unsplash.com/photo-1735668219806-7ee1de68b969?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
-      DistrictName: "Destination 4",
-      MainLocationName: "Destination 6",
+    DistrictName: "Destination 4",
+    MainLocationName: "Destination 6",
 
-      DurationinDays: "5",
-      StartDate: "2022-08-15",
+    DurationinDays: "5",
+    StartDate: "2022-08-15",
   },
 ];
 
@@ -135,10 +137,6 @@ function Home() {
                 <a href="/contact">Learn More</a>
               </button>
             </div>
-          </div>
-
-          <div className="heroContent-img">
-            <img src={tempImg} alt="homeImage" />
           </div>
         </div>
 
@@ -174,21 +172,20 @@ function Home() {
           </div>
         </div>
 
-        <div className="destination-content">
-          <h5 className="destination-heading">Top Destination</h5>
-          <p className="destination-description">
+        <div className="home_destination-content"> 
+          <h5 className="home_destination-heading">Top Destination</h5>
+          <p className="home_destination-description">
             Explore our handpicked top destination, where unforgettable <br />
             adventures and breathtaking experience awaits you
           </p>
           <div className="destination-slider-container">
-          <DestinationSlider
-            destinations={destinations} 
-          />
+            <DestinationSlider destinations={destinations} />
           </div>
-          
-          <h5 className="destination-heading">Packages</h5>
-          <p className="destination-description">
-            Discover the World iconic destination with our exeoptional packages <br />
+
+          <h5 className="home_destination-heading">Packages</h5>
+          <p className="home_destination-description">
+            Discover the World iconic destination with our exeoptional packages{" "}
+            <br />
             offering unparallel experience , personlised iternerraies and
             unforgettable memories
           </p>
@@ -197,10 +194,23 @@ function Home() {
           </div>
         </div>
 
+        <div className="features-banner">
+          <div className="overlay"></div>
+          <div className="content">
+            <h2>Explore the World with Us</h2>
+            <p>
+              Discover new destinations, plan your perfect trip, and make
+              memories that last a lifetime.
+            </p>
+            <button className="features-btn"> <a href="/contact">Learn More</a></button>
+          </div>
+        </div>
         <div className="features-content">
           <WhyChooseUs />
         </div>
+        <Footer />
       </div>
+      
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import "../pages/contact.css"; // Import your CSS file
 import tempImg from "../assets/images/tempImg.jpg";
 import {
@@ -13,17 +14,17 @@ import ContactCard from "../components/ContactCard";
 import emailjs from "emailjs-com";
 
 function Contact() {
-  const form = useRef(null);
+  const formRef = useRef(null);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm(
-        "service_1v4q7u9",
-        "template_1v4q7u9",
-        form.current,
-        "user_1v4q7u9"
+      .sendForm( 
+        "service_7ejwmsj",
+        "template_05s0c8x",
+        formRef.current,
+        "xXRK3uCxPq6PWNs5h"
       )
       .then(
         (result) => {
@@ -206,13 +207,13 @@ function Contact() {
           {/* Right Column - Form */}
 
           <div className="contactContent__right">
-            <form ref={form} onSubmit={sendEmail}>
+            <form ref={formRef} onSubmit={sendEmail}>
               <div className="form__row">
                 <div className="form__group">
                   <input
                     type="text"
                     id="firstName"
-                    name="firstName"
+                    name="user_name"
                     required
                     placeholder="Your Name"
                   />
@@ -221,7 +222,7 @@ function Contact() {
                   <input
                     type="email"
                     id="email"
-                    name="email"
+                    name="user_email"
                     required
                     placeholder="Email Address"
                   />
@@ -232,28 +233,28 @@ function Contact() {
                   <input
                     type="tel"
                     id="phone"
-                    name="phone"
+                    name="user_phone"
                     required
                     placeholder="Phone Number"
                   />
                 </div>
                 <div className="form__group">
                   <label htmlFor="date">Desired Date</label>
-                  <input type="date" id="date" name="date" required />
+                  <input type="date" id="date" name="user_date" required />
                 </div>
               </div>
               <div className="form__row">
                 <div className="form__group">
                   <label htmlFor="people">Number of People</label>
-                  <input type="number" id="people" name="people" required />
+                  <input type="number" id="people" name="user_people" required />
                 </div>
                 <div className="form__group">
                   <label htmlFor="destination">Destination</label>
-                  <select id="destination" name="destination" required>
-                    <option value="paris">Paris</option>
-                    <option value="new-york">New York</option>
-                    <option value="tokyo">Tokyo</option>
-                    <option value="other">Other</option>
+                  <select id="destination" name="user_destination" required>
+                    <option value="paris">Kanha National park</option>
+                    <option value="new-york">Bandhavghar</option>
+                    <option value="tokyo">Pench</option>
+                    <option value="other">Bhedaghat</option>
                   </select>
                 </div>
               </div>
@@ -266,6 +267,7 @@ function Contact() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
