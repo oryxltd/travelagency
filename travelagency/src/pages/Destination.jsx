@@ -67,7 +67,7 @@ const Destination = () => {
                 rating={destination.rating}
                 details={destination.details}
               />
-            ))}
+            ))} 
           </div>
         </div>
         <Footer />
