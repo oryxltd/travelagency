@@ -1,8 +1,8 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 import { MdLocationOn, MdAccessTime } from "react-icons/md";
-import "../components/packagecard.css";
-import "../components/navbar.css";
+import "../components/packagecards.css";
+import "../components/navbar.css"; 
 
 const PackageCard = ({
   image,
