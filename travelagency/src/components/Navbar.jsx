@@ -18,7 +18,7 @@ export default function Navbar() {
   const [lastScrollTop, setLastScrollTop] = useState(0);
 
   // scrolled function
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
