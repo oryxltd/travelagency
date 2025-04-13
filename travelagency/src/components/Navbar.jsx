@@ -5,8 +5,8 @@ import { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes, FaWhatsapp } from "react-icons/fa";
-import tempImg from "../assets/images/tempImg.jpg";
 import "../components/navbar.css";
+import jklogo1 from "../assets/images/jklogo1.png";
 
 export default function Navbar() {
   const [click, setClick] = React.useState(false);
@@ -60,7 +60,7 @@ export default function Navbar() {
       }`}
     >
       <div className="logo">
-        <img src={tempImg} alt="logoImg" />
+        <img src={jklogo1} alt="logoImg" />
         <h5>JK Tours</h5>
       </div>
       <div className={`nav-links ${click ? "active" : ""}`}>

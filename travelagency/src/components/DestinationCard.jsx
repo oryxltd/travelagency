@@ -19,7 +19,7 @@ const DestinationCard = ({ image, name, details, rating }) => {
         </div>
         <div className="destination-details">{details}</div>
         <button className="arrowButton">
-          <FaArrowRight className="arrow-icon" />
+          <FaArrowRight className="arrow-icon" /> 
         </button>
       </div>
     </div>

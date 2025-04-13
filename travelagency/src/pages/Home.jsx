@@ -9,6 +9,7 @@ import DestinationSlider from "../components/DestinationSlider";
 import PackageSlider from "../components/PackageSlider";
 import WhyChooseUs from "../components/WhyChooseUs";
 import Footer from "../components/Footer";
+import { FaGlobeAmericas, FaTags } from 'react-icons/fa';
 
 const destinations = [
   {
@@ -157,11 +158,11 @@ function Home() {
             </p>
             <div className="about-typoLine">
               <div className="typo-infoBtn">
-                <img src="" alt="icon" />
+                <FaGlobeAmericas className="typo-inforBtn-logo"/>
                 <p>Great Travel experience</p>
               </div>
               <div className="typo-infoBtn">
-                <img src="" alt="icon" />
+                <FaTags className="typo-inforBtn-logo"/>
                 <p>Competitive pricing offers</p>
               </div>
             </div>

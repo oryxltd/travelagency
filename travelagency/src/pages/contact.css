@@ -126,9 +126,19 @@
   
   @media (max-width: 480px) {
     
-    .contact__page {
-      padding: 0 1rem;
+    .contact__page{
       margin: 0;
+      padding: 0; 
+    }
+
+    .contact__container {
+      padding: 0;
+      
+    }
+    .about__content {
+      height: auto;
+      padding: 2rem .5rem;
+      margin: 2rem 0;
     }
   
     .about__heading {
