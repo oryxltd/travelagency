@@ -72,7 +72,7 @@ function Contact() {
   return (
     <div className="contact__page">
       <Navbar />
-      <div className="contact__container">
+      <div className="contact__container" id="about">
         {/* About Us Section */}
         <section className="about">
           <h1 className="about__heading">About Us</h1>
@@ -162,7 +162,7 @@ function Contact() {
         </section>
       </div>
 
-      <div className="contactUs__section">
+      <div className="contactUs__section" id="contact">
         {/* Hero section */}
         <div className="contactHero__content">
           <h1 className="contactHero__heading">Contact Us</h1>

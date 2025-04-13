@@ -9,12 +9,12 @@ import { FaDollarSign } from 'react-icons/fa';
 const WhyChooseUs = () => {
   return (
     <section className="why-choose-us">
-      <div className="container"> 
+      <div className="wcu-container">  
         <div className="text-content">
           <h2>Why Choose Us</h2>
           <p>Choose us for your travel needs because we offer personalized itineraries, unbeatable deals, and 24/7 customer support, ensuring a seamless and unforgettable journey every time.</p>
  
-          <ul className="features">
+          <ul className="wcu-features">
             <li> <span><MdPeople size={22} /> </span>Every place and activity is thoughtfully selected by our team.</li>
             <li> <span><FaDollarSign size={22} /></span>   We are provide different type of tour plan.</li>
 
@@ -23,9 +23,9 @@ const WhyChooseUs = () => {
             <li> <span><MdSupportAgent size={22} /></span> Trusted by more that 50,000 user.</li>
           </ul>
 
-          <button className="btn">Find Out More</button>
+          <button className="wcu-btn">Find Out More</button>
         </div>
-        <div className="image-container">
+        <div className="image-container"> 
           <img src={tempImg} alt="Why Choose Us" />
         </div>
       </div> 

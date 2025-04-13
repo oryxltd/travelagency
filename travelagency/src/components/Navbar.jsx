@@ -4,6 +4,8 @@ import React from "react";
 import { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
+
 import { FaBars, FaTimes, FaWhatsapp } from "react-icons/fa";
 import "../components/navbar.css";
 import jklogo1 from "../assets/images/jklogo1.png";
@@ -73,7 +75,10 @@ export default function Navbar() {
               <Link to="/destination">Destination</Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+            <HashLink smooth to="/contact#contact">Contact</HashLink>
+            </li>
+            <li>
+            <HashLink smooth to="/contact#about">About</HashLink>
             </li>
           </ul>
         </nav>
