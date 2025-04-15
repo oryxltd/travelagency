@@ -18,6 +18,7 @@ const PackageSlider = ({ packages }) => {
       packages[currentIndex],
       packages[(currentIndex + 1) % packages.length],
       packages[(currentIndex + 2) % packages.length],
+      packages[(currentIndex + 3) % packages.length],
     ];
   };
 

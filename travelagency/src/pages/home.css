@@ -234,6 +234,13 @@
 
 /* hero responsiveness end */
 
+/* middle services */
+.upcoming-features{
+  width: 100%;
+  height: 300px;
+  border: 2px solid yellow;
+}
+
 /* about content  */
 .about-content{
     border: 2px solid rgb(46, 36, 149);
@@ -410,6 +417,7 @@
 
 .home_destination-heading{
     font-size: var(--big-text);
+    margin-top: 1.5rem;
 }
 
 .home_destination-description {

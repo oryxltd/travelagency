@@ -61,7 +61,7 @@ const packages = [
   {
     image:
       "https://plus.unsplash.com/premium_photo-1672762542894-caaa8d4f0a77?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
-    DistrictName: "Destination 5",
+    DistrictName: "Premium",
     MainLocationName: "Destination 1",
 
     DurationinDays: "$4",
@@ -70,7 +70,7 @@ const packages = [
   {
     image:
       "https://images.unsplash.com/photo-1638135644120-5f024c0dcae7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
-    DistrictName: "Destination 6",
+    DistrictName: "Standard",
     MainLocationName: "Destination 2",
 
     DurationinDays: "3",
@@ -79,7 +79,7 @@ const packages = [
   {
     image:
       "https://images.unsplash.com/photo-1735668219806-7ee1de68b969?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
-    DistrictName: "Destination 1",
+    DistrictName: "Basic",
     MainLocationName: "Destination 3",
 
     DurationinDays: "4",
@@ -88,28 +88,10 @@ const packages = [
   {
     image:
       "https://images.unsplash.com/photo-1735668219806-7ee1de68b969?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
-    DistrictName: "Destination 2",
+    DistrictName: "ON demand",
     MainLocationName: "Destination 4",
 
     DurationinDays: "2",
-    StartDate: "2022-08-15",
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1735668219806-7ee1de68b969?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
-    DistrictName: "Destination 3",
-    MainLocationName: "Destination 5",
-
-    DurationinDays: "4",
-    StartDate: "2022-08-15",
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1735668219806-7ee1de68b969?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
-    DistrictName: "Destination 4",
-    MainLocationName: "Destination 6",
-
-    DurationinDays: "5",
     StartDate: "2022-08-15",
   },
 ];
@@ -140,7 +122,11 @@ function Home() {
             </div>
           </div>
         </div>
+        <div className="upcoming-features">
 
+          {/* update it later */}
+
+        </div>
         <div className="about-content">
           <div className="about-imagePart ">
             <img src={tempImg} alt="" />

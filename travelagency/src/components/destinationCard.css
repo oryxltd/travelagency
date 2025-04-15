@@ -3,9 +3,8 @@
     width: 290px; /* Adjust as needed */
     overflow: hidden; /* Prevents image from overflowing rounded corners */
     transition: transform 0.2s ease; /* Smooth hover effect */
-    background-color: #1b3429;
-    /* Card background color */
-    color: #fff;
+    
+  
     border: 1px solid grey;
     border-radius: 8px;
 } 
@@ -172,3 +171,4 @@
     -webkit-line-clamp: 2;
   }
 }
+ 
