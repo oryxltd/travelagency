@@ -9,20 +9,20 @@ const destinations = [
     name: "Kanha Park",
     gateInfo: "Khatia Gate, Mukki Gate",
     location: "Madhya Pradesh",
-    description: "Known for its lush sal and bamboo forests and rich wildlife.",
+    description: "Kanha National Park, often called the 'Heart of India's Jungle', is one of Asia’s finest wildlife reserves and a major stronghold of the majestic Bengal tiger  Spread across lush sal and bamboo forests, Kanha inspired Rudyard Kipling’s The Jungle Book. Its thriving meadows, rare barasingha deer, and iconic safari experience make it a top pick for wildlife lovers." ,
     image: kanha,
-    rating: 3.8,
-    details: "A famous park in Madhya Pradesh known for its tigers and wildlife conservation efforts."
+    rating: 4.7,
+    details: "Bengal Tigers, Barasingha (Swamp Deer), Leopards, Sloth Bears, Indian Gaur, Wild Dogs, and over 300 bird species"
   },
   {
     id: 2,
     name: "Bandhavgarh Park",
     gateInfo: "Tala Gate, Magadhi Gate",
     location: "Madhya Pradesh",
-    description: "Popular for its high density of Royal Bengal Tigers.",
+    description: "Known for having one of the highest densities of Bengal tigers in India, Bandhavgarh is a haven for wildlife photographers and adventure seekers. Nestled in the Vindhya hills, it features dramatic cliffs, dense forest, and the historic Bandhavgarh Fort. Every safari here feels like a royal hunt through ancient jungle trails.",
     image: badhavghar,
-    rating: 3.8,
-    details: "A famous park in Madhya Pradesh known for its tigers and wildlife conservation efforts."
+    rating: 4.7,
+    details: "Bengal Tigers, Leopards, Indian Bison, Deer (Sambar, Chital), Langurs, Wild Boars, and Jackals."
 
   },
   {
@@ -30,10 +30,10 @@ const destinations = [
     name: "Pench Park",
     gateInfo: "Turia Gate, Karmajhiri Gate",
     location: "Madhya Pradesh",
-    description: "Inspiration behind The Jungle Book.",
+    description: "Pench, the forest that inspired The Jungle Book, is a magical blend of teak forests, meadows, and rivers teeming with wildlife. Located on the Madhya Pradesh–Maharashtra border, it’s famous for tigers, leopards, wild dogs, and over 250 bird species. A calm yet thrilling destination for both families and true nature explorers.",
     image: pench,
-    rating: 3.8,
-    details: "A famous park in Madhya Pradesh known for its tigers and wildlife conservation efforts."
+    rating: 4.6,
+    details: "Tigers, Leopards, Wild Dogs (Dholes), Hyenas, Gaur, Barking Deer, Jungle Cats, and more than 250 species of birds."
 
   },
   {
@@ -41,10 +41,10 @@ const destinations = [
     name: "Panna Park",
     gateInfo: "Madla Gate, Hinauta Gate",
     location: "Madhya Pradesh",
-    description: "Famous for its tiger reintroduction and diamond mines.",
+    description: "Panna National Park is a hidden gem known for its successful tiger reintroduction program and scenic beauty along the Ken River. The park is home to tigers, leopards, gharials, and stunning waterfalls like Raneh Falls. Ideal for offbeat travelers who seek both serenity and wildlife.",
     image: panna,
-    rating: 3.8,
-    details: "A famous park in Madhya Pradesh known for its tigers and wildlife conservation efforts."
+    rating: 4.5,
+    details: "Tigers, Leopards, Gharials, Crocodiles, Nilgai, Chinkara, Sloth Bears, and a variety of birds including Vultures and Kingfishers"
 
   }
 ];

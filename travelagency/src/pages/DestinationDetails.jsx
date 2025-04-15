@@ -38,7 +38,7 @@ const DestinationDetail = () => {
     customContent = (
       <div className="pench-special">
           <PannaSp />
-      </div>
+      </div> 
     );
   } 
 
