@@ -1,174 +1,131 @@
-
 .destination-card {
-    width: 290px; /* Adjust as needed */
-    overflow: hidden; /* Prevents image from overflowing rounded corners */
-    transition: transform 0.2s ease; /* Smooth hover effect */
-    
-  
-    border: 1px solid grey;
-    border-radius: 8px;
-} 
+    width: 290px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 1s ease;
+    position: relative;
+    /* border: 2px solid red; */ /* Remove for final design */
+  }
   
   .destination-card:hover {
-    transform: translateY(-5px); /* Lift up on hover */
+    transform: translateY(-6px);
   }
   
-  .destination-card-top {
-    position: relative; /* For positioning the overlay */
-    
-  }
-
-  .destination-card-top img{
+  .destination-card-bg {
+    position: relative;
     width: 100%;
-    height: 200px; /* Adjust as needed */
-    object-fit: cover; /* Ensures image covers the area */
-    display: block; /* Prevents a small gap below the image */
-    border-radius: 10px;
+    height: 300px;
   }
   
   .destination-image {
-     
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
-    
   
-  .destination-card-bottom {
-    padding: 15px;
+  /* CONTENT BOX - Initially visible (name and arrow) */
+  .destination-card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    height: 165px; /* Set a fixed height for consistent card sizes */
+    justify-content: flex-end;
+    padding: 1rem;
+    pointer-events: auto; /* avoids accidental hover blocking */
+
   }
   
-  .destination-bottom-head {
+  .destination-name-wrapper {
     display: flex;
-    justify-content: space-between; /* Align name and rating */
-    align-items: center;
-    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 0.5rem; /* Adjust spacing as needed */
   }
   
   .destination-name {
     font-size: 1.1rem;
-    font-weight: bold;
-    margin: 0; /* Remove default margin */
+    font-weight: 600;
+    color: white;
+    z-index: 2;
+  }
+  
+  .arrowButton {
+    border: 1px solid #37dc42;
+    padding: 6px 12px; /* Adjust padding for button size */
+    border-radius: 10px;
+    background-color: transparent;
+    color: #37dc42;
+    display: inline-flex; /* Use flex to center the icon */
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.6s ease, color 0.6s ease;
+    z-index: 2; /* Ensure button is above the hover content initially */
+  }
+  
+  .arrowButton:hover {
+    background-color: #37dc42;
+    color: white;
+  }
+  
+  .arrow-icon {
+    font-size: 0.9rem; /* Adjust icon size */
+  }
+  
+  /* HIDDEN CONTENT CONTAINER */
+  .hover-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly darker for better readability */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0;
+    transform: translateY(100%); /* Start hidden below */
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    pointer-events: auto; /* Make content interactive when visible */
+  }
+  
+  /* SHOW ON HOVER */
+  .destination-card:hover .hover-content {
+    opacity: 1;
+    transform: translateY(0); /* Slide in from bottom */
+  }
+  
+  .destination-bottom-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
   }
   
   .destination-rating {
     display: flex;
     align-items: center;
-    color: #f2c14e; /* Gold color for stars */
-    font-size: 1rem;
+    color: #f2c14e;
+    font-size: 0.95rem;
   }
   
   .star-icon {
-    margin-right: 8px;
-
+    margin-right: 0.3rem;
   }
   
   .destination-details {
-    font-size: 0.9rem;
-    /* color: #555; Slightly darker text color */
-    margin-bottom: 15px;
-    overflow: hidden; /* Hide overflowing text */
-    text-overflow: ellipsis; /* Add ellipsis (...) for overflow */
+    color: white;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
     display: -webkit-box;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
-    border-bottom: 1px solid grey;
-    padding-bottom: .5rem;
+    margin-bottom: 0.8rem; /* Add some space above the button */
+    /* border: 2px solid blue; */ /* Remove for final design */
   }
-  
-  .arrowButton {
-    background-color: transparent;
-    border: 1px solid #37dc42;
-    padding: 2px 1rem;
-    cursor: pointer;
-    align-self: flex-end; /* Align button to the right */
-    border-radius: 10px; /* Make it a circle */
-    transition: background-color 0.3s ease;
-  }
-  
-  .arrowButton:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* Subtle hover effect */
-  }
-  
-  .arrow-icon {
-    font-size: 1.2rem;
-    color: #37dc42;
-
-  }
-
-  /* responsive ness */
-
-  /* Responsive Destination Card Styles */
-
-@media (max-width: 1024px) {
-  .destination-card {
-    width: 260px;
-  }
-
-  .destination-card-bottom {
-    height: auto;
-  }
-
-  .destination-image {
-    height: 180px;
-  }
-
-  .destination-details {
-    -webkit-line-clamp: 3;
-  }
-}
-
-@media (max-width: 768px) {
-  .destination-card {
-    width: 220px;
-  }
-
-  .destination-image {
-    height: 160px;
-  }
-
-  .destination-name {
-    font-size: 1rem;
-  }
-
-  .destination-rating {
-    font-size: 0.9rem;
-  }
-
-  .destination-details {
-    font-size: 0.85rem;
-    -webkit-line-clamp: 2;
-  }
-
-  .arrowButton {
-    padding: 2px 0.8rem;
-  }
-
-  .arrow-icon {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) { 
-  .destination-card {
-    width: 300px;
-    margin: 0 auto;
-  }
-
-  .destination-image {
-    height: 180px;
-  }
-
-  .destination-card-bottom {
-    padding: 10px;
-  }
-
-  .destination-name {
-    font-size: 1rem;
-  }
-
-  .destination-details {
-    font-size: 0.85rem;
-    -webkit-line-clamp: 2;
-  }
-}
- 

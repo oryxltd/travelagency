@@ -5,6 +5,7 @@ import Contact from './pages/Contact';
 import PackageDetails from './pages/PackageDetails';
 
 import './App.css';
+import DestinationDetail from './pages/DestinationDetails';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/destination" element={<Destination />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/package/:id" element={<PackageDetails />} />
+          <Route path='/destination/:id' element={<DestinationDetail />} />
         </Routes>
       </Router>
       

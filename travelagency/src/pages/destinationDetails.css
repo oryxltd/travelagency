@@ -1,0 +1,98 @@
+/* DestinationDetail.css */
+
+/* General Layout */
+.destination-detail-container {
+    max-width: 1200px;
+    margin: 60px 2rem 0 2rem;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Header Section */
+  .destination-detail-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Destination Image */
+  .destination-detail-header img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Destination Title */
+  .destination-detail-header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  /* Description Section */
+  .destination-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #666;
+    margin-top: 20px;
+    text-align: justify;
+  }
+  
+  /* Details Section */
+  .destination-details {
+    margin-top: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Main Gate Info */
+  .destination-gates-info {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    font-weight: 500;
+    color: #666;
+  }
+  
+  /* Location Info */
+  .destination-location {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #444;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .destination-detail-header h1 {
+      font-size: 2.5rem;
+    }
+  
+    .destination-description {
+      font-size: 1rem;
+    }
+  
+    .destination-detail-header img {
+      height: 250px;
+    }
+  
+    .destination-detail-container {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .destination-detail-header h1 {
+      font-size: 2rem;
+    }
+  
+    .destination-description {
+      font-size: 0.9rem;
+    }
+  
+    .destination-detail-header img {
+      height: 200px;
+    }
+  }
+  
