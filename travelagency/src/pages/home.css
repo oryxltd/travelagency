@@ -105,7 +105,7 @@
     color: grey;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif
 }
-
+/* 
 .heroContent-btn{
     margin: 2rem 0;
     height: 70px;
@@ -140,7 +140,84 @@
 
 .heroContent-btn .book-btn a{
     color: white;
+} */
+
+/*  hero button  */
+
+.book-btn {
+  display: inline-block; /* Allows button to be inline but with block properties */
+  text-decoration: none; /* Remove default link underline */
+  margin-right: 15px; /* Add spacing between the buttons */
 }
+
+.book-btn button {
+  background-color: orange; /* Primary blue color */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease; /* Smooth transition */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.book-btn button:hover {
+  background-color: orange; /* Darker blue on hover */
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+}
+
+/* Style for the Learn More button */
+.learn-btn {
+  background-color: transparent; /* Transparent background */
+  color: #b1b1b1; /* Dark gray text */
+  border: 2px solid #b1b1b1; /* Dark gray border */
+  padding: 10px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease; /* Added background-color */
+}
+
+.learn-btn:hover {
+  color: orange; /* Blue text on hover */
+  border-color: orange; /* Blue border on hover */
+  background-color: rgba(0, 123, 255, 0.1); /* Light blue background on hover, for better feedback */
+}
+
+.learn-btn a {
+  text-decoration: none; /* Remove default link underline */
+  color: inherit; /* Inherit text color from the button */
+  display: block; /* Make the entire button clickable */
+}
+
+.learn-btn a:hover {
+  text-decoration: none; /* Ensure no underline on hover */
+}
+
+/* Responsive adjustments (optional - adjust as needed) */
+@media (max-width: 768px) { /* Medium screens and below (tablets, etc.) */
+  .book-btn {
+    margin-right: 0; /* Remove right margin on smaller screens */
+    margin-bottom: 10px; /* Add bottom margin when buttons are stacked */
+  }
+  .book-btn button,
+  .learn-btn {
+    width: 100%; /* Make buttons full width on smaller screens if they wrap */
+    text-align: center; /* Center the text inside the button */
+  }
+}
+
+@media (max-width: 480px) {
+    .book-btn button,
+    .learn-btn{
+        font-size: 14px; /* smaller font on very small screens */
+        padding: 10px 20px;
+    }
+}
+
 
 /* right part of hero section */
 .heroContent-img{

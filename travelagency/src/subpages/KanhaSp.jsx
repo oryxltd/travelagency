@@ -254,7 +254,10 @@ function KanhaSp() {
             </div>
           ))}
         </div>
-        <button className="book-now-button">Book Now</button>
+       
+        <Link to="/inquiry" className="cta-button-link">
+            <button className="cta-button">Book Now</button>
+          </Link>
         {/* safar-info-section */}
         <div className="safari-info-section">
           <h2>Safari Information</h2>

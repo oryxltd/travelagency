@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom";
 import "../pages/home.css";
 import tempImg from "../assets/images/tempImg.jpg";
 // import safari from "../assets/images/safari.jpg";
@@ -9,7 +10,7 @@ import DestinationSlider from "../components/DestinationSlider";
 import PackageSlider from "../components/PackageSlider";
 import WhyChooseUs from "../components/WhyChooseUs";
 import Footer from "../components/Footer";
-import { FaGlobeAmericas, FaTags } from 'react-icons/fa';
+import { FaGlobeAmericas, FaTags } from "react-icons/fa";
 
 const destinations = [
   {
@@ -113,9 +114,12 @@ function Home() {
               across the india's most iconic Destinations
             </p>
             <div className="heroContent-btn">
-              <button className="book-btn">
+              {/* <button className="book-btn">
                 <a href="/contact">Book Now</a>
-              </button>
+              </button> */}
+              <Link to="/inquiry" className="book-btn">
+                <button>Book Now</button>
+              </Link>
               <button className="learn-btn">
                 <a href="/contact">Learn More</a>
               </button>
@@ -123,9 +127,7 @@ function Home() {
           </div>
         </div>
         <div className="upcoming-features">
-
-          {/* update it later */}
-
+                
         </div>
         <div className="about-content">
           <div className="about-imagePart ">
@@ -144,11 +146,11 @@ function Home() {
             </p>
             <div className="about-typoLine">
               <div className="typo-infoBtn">
-                <FaGlobeAmericas className="typo-inforBtn-logo"/>
+                <FaGlobeAmericas className="typo-inforBtn-logo" />
                 <p>Great Travel experience</p>
               </div>
               <div className="typo-infoBtn">
-                <FaTags className="typo-inforBtn-logo"/>
+                <FaTags className="typo-inforBtn-logo" />
                 <p>Competitive pricing offers</p>
               </div>
             </div>
@@ -159,7 +161,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="home_destination-content"> 
+        <div className="home_destination-content">
           <h5 className="home_destination-heading">Top Destination</h5>
           <p className="home_destination-description">
             Explore our handpicked top destination, where unforgettable <br />
@@ -189,7 +191,10 @@ function Home() {
               Discover new destinations, plan your perfect trip, and make
               memories that last a lifetime.
             </p>
-            <button className="features-btn"> <a href="/contact">Learn More</a></button>
+            <button className="features-btn">
+              {" "}
+              <a href="/contact">Learn More</a>
+            </button>
           </div>
         </div>
         <div className="features-content">
@@ -197,7 +202,6 @@ function Home() {
         </div>
         <Footer />
       </div>
-      
     </div>
   );
 }
