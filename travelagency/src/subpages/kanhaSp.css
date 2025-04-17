@@ -1,0 +1,667 @@
+/* KanhaSp.css */
+
+.park-overview {
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-top: 30px;
+}
+
+.park-overview-details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Spacing between features list and button */
+}
+
+.park-features-list {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(400px, 1fr)
+  ); /* Responsive columns */
+  gap: 15px 20px; /* Spacing between feature items */
+}
+
+.park-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.park-feature-icon {
+  font-size: 1.2rem;
+  color: #3498db; /* A modern, vibrant color for icons */
+}
+
+.park-feature-label {
+  font-weight: 600;
+  color: #333;
+  margin-right: 5px;
+}
+
+.park-feature-value {
+  color: #555;
+}
+
+.book-now-button {
+  background-color: #2ecc71; /* A positive, inviting color */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start; /* Align button to the left */
+}
+
+.book-now-button:hover {
+  background-color: #27ae60;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .park-features-list {
+    grid-template-columns: 1fr; /* Stack features on smaller screens */
+  }
+
+  .book-now-button {
+    align-self: stretch; /* Make button full width on smaller screens */
+  }
+}
+
+/* dafari info section */
+
+/* SafariInfo.css */
+
+.safari-info-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+.safari-info-section h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Safari Types & Timings Section */
+.safari-types-timings {
+  margin-bottom: 40px;
+  padding: 25px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.safari-types-timings h3 {
+  font-size: 1.8rem;
+  color: #34495e;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.safari-types-timings ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.safari-types-timings li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.safari-types-timings li:last-child {
+  border-bottom: none;
+}
+
+.safari-types-timings strong {
+  font-weight: 700;
+  color: #444;
+  min-width: 160px; /* Adjust as needed */
+  display: inline-block;
+}
+
+.safari-types-timings .timing-note {
+  font-size: 0.95rem;
+  color: #777;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+/* Core & Buffer Zones Section */
+.core-buffer-zones {
+  margin-bottom: 30px;
+  padding: 25px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.core-buffer-zones h3 {
+  font-size: 1.8rem;
+  color: #34495e;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.zones-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Left and right columns for Core and Buffer */
+  gap: 30px;
+}
+
+.core-zones h4,
+.buffer-zones h4 {
+  font-size: 1.6rem;
+  color: #444;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.zone-details {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.zone-details strong {
+  font-weight: 700;
+  color: #555;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.zone-details p {
+  margin: 5px 0;
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Booking Note */
+.booking-note {
+  font-size: 0.95rem;
+  color: #777;
+  margin-top: 25px;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .zones-container {
+    grid-template-columns: 1fr; /* Stack Core and Buffer on smaller screens */
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+    .safari-info-section{
+      padding: 0;
+      margin: 20px 0;
+    }
+}
+  
+/* safari info end  */
+/* ConstantPricing.css */
+
+.constant-pricing-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+.constant-pricing-section h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.pricing-note {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 0 10%; /* Add horizontal padding for wider screens */
+}
+
+.pricing-details-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Responsive grid */
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.pricing-category {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); /* Slightly stronger shadow */
+  padding: 30px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Add transition */
+}
+
+.pricing-category:hover {
+  transform: translateY(-4px); /* Slight lift on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Increased shadow on hover */
+}
+
+.pricing-category h3 {
+  font-size: 1.8rem;
+  color: #3498db; /* Use a more vibrant color */
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.pricing-category p {
+  font-size: 1.2rem; /* Increase font size */
+  color: #444;
+  margin-bottom: 15px;
+  text-align: center; /* Center the price */
+  font-weight: 500;
+}
+
+.pricing-category strong {
+  font-weight: 700;
+  color: #2c3e50; /* Darker color for strong */
+}
+
+.weekend-indicator {
+  color: #e74c3c;
+  font-weight: 700;
+  margin-left: 8px;
+  animation: pulse 2s infinite; /* Add a subtle animation */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.important-note {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 30px;
+  line-height: 1.8;
+}
+
+.important-note ul {
+  padding-left: 25px;
+  margin-top: 15px;
+  list-style-type: disc; /* Use disc for better readability */
+}
+
+.important-note li {
+  margin-bottom: 12px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .pricing-note {
+    padding: 0 5%;
+  }
+  .pricing-details-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .constant-pricing-section {
+    padding: 30px;
+    margin-top: 30px;
+  }
+
+  .constant-pricing-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+  }
+
+  .pricing-note {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .pricing-category h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+
+  .pricing-category p {
+    font-size: 1.1rem;
+  }
+
+  .important-note {
+    font-size: 0.95rem;
+  }
+}
+
+/* NearbyAttractions.css */
+
+.nearby-attractions-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+.nearby-attractions-section h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.attractions-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.attraction-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  padding: 25px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.attraction-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+.attraction-card h3 {
+  font-size: 1.6rem;
+  color: #34495e;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.attraction-description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.attraction-distance {
+  font-size: 0.95rem;
+  color: #777;
+  font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .attractions-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* sctivies and services */
+/* Accommodations.css */
+
+.accommodations-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+.accommodations-section h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.activities-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.activity-item {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  padding: 25px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.activity-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+.activity-item h3 {
+  font-size: 1.6rem;
+  color: #34495e;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.activity-description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.accommodation-note {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .activities-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* faq section */
+
+/* FAQSection.css */
+
+.faq-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+.faq-section h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.faq-list {
+  margin-top: 20px;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden; /* To contain the answer within the rounded borders */
+}
+
+.faq-question {
+  background-color: #fff;
+  color: #333;
+  padding: 15px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #f0f0f0;
+}
+
+.arrow {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  background-color: #f9f9f9;
+  color: #555;
+  padding: 15px 20px;
+  border-top: 1px solid #eee;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .faq-section {
+    padding: 30px;
+  }
+
+  .faq-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+  }
+
+  .faq-question {
+    padding: 12px 15px;
+    font-size: 1rem;
+  }
+
+  .faq-answer {
+    padding: 12px 15px;
+    font-size: 0.95rem;
+  }
+}
+
+/*  call to action start */
+/* CallToAction.css */
+
+.cta-section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 40px auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cta-content {
+  padding-right: 40px;
+}
+
+.cta-punchline {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.cta-subtext {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #2ecc71; /* A vibrant call-to-action color */
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font-weight: 600;
+}
+
+.cta-button:hover {
+  background-color: #27ae60;
+}
+
+.cta-image {
+  border-radius: 12px;
+  overflow: hidden; /* To keep the image within rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.cta-image img {
+  width: 100%;
+  height: auto;
+  display: block; /* To prevent extra space below the image */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cta-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .cta-content {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .cta-punchline {
+    font-size: 2rem;
+  }
+}

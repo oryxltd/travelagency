@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import "../pages/contact.css"; // Import your CSS file
+import "../pages/contact.css"; 
 import tempImg from "../assets/images/tempImg.jpg";
 import {
   FaPlus,
@@ -9,7 +9,7 @@ import {
   FaPhone,
   FaEnvelope,
   FaMapMarkerAlt,
-} from "react-icons/fa"; // Import plus and minus icons
+} from "react-icons/fa"; 
 import ContactCard from "../components/ContactCard";
 import emailjs from "emailjs-com";
 

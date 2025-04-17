@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
 import destinations from "../data/parks";
+
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import KanhaSp from "../subpages/KanhaSp";
 import BadhavgharSp from "../subpages/BadhavgharSp";
 import PenchSp from "../subpages/PenchSp";
@@ -43,7 +45,7 @@ const DestinationDetail = () => {
   } 
 
 
-  return (
+  return ( 
     <>
       <Navbar />
       <div className="destination-detail-container">
@@ -56,12 +58,9 @@ const DestinationDetail = () => {
           <h1>{destination.name}</h1>
         </div>
         <p className="destination-description">{destination.description}</p>
-        <div className="destination-details">
-          <p className="destination-gates-info">Main Gates: {destination.gateInfo}</p>
-          <p className="destination-location">Location: {destination.location}</p>
-        </div>
-        {customContent}
+        <div>{customContent}</div>
       </div>
+      <Footer />
     </>
   );
 };

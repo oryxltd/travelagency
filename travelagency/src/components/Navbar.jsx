@@ -22,7 +22,7 @@ export default function Navbar() {
   // scrolled function
   const [scrolled] = useState(false);
 
-  useEffect(() => {
+  useEffect(() => { 
     const handleScroll = () => {
 
       const scrollTop = window.scrollY;
