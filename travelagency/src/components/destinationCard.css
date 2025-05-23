@@ -93,12 +93,8 @@
     pointer-events: auto; /* Make content interactive when visible */
   }
   
-  /* SHOW ON HOVER */
-  .destination-card:hover .hover-content {
-    opacity: 1;
-    transform: translateY(0); /* Slide in from bottom */
-  }
   
+
   .destination-bottom-head {
     display: flex;
     justify-content: space-between;

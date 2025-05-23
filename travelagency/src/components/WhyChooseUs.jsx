@@ -1,14 +1,14 @@
 import React from 'react';
 
-// import tempImg from './tempImg.jpg'; // Import the image
-import tempImg from '../assets/images/tempImg.jpg';
+import g0 from "../assets/images/g0.jpg";
+
 import '../components/whyChooseUs.css'; // Import the CSS file
 import { MdPeople, MdHome, MdKeyboardArrowRight, MdSupportAgent } from 'react-icons/md';
 import { FaDollarSign } from 'react-icons/fa';
 
 const WhyChooseUs = () => {
   return (
-    <section className="why-choose-us">
+    <section className="why-choose-us"> 
       <div className="wcu-container">  
         <div className="text-content">
           <h2>Why Choose Us</h2>
@@ -26,7 +26,7 @@ const WhyChooseUs = () => {
           <button className="wcu-btn">Find Out More</button>
         </div>
         <div className="image-container"> 
-          <img src={tempImg} alt="Why Choose Us" />
+          <img src={g0} alt="Why Choose Us" />
         </div>
       </div> 
     </section>

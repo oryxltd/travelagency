@@ -1,12 +1,12 @@
 :root {
-    --color-primary: #706D54;     /* deep olive - main brand color */
-    --color-secondary: #A08963;   /* golden beige - buttons, hover highlights */
-    --color-accent: #C9B194;      /* light tan - cards, secondary text */
-    --color-background: #DBDBDB;  /* soft grey - backgrounds */
-    --color-text: #1a1a1a;        /* dark fallback for text on light background */
-    --color-white: #ffffff;       /* white for contrast */
-    --font-family: 'Poppins', sans-serif;
-    --big-text: 40px;
-    --border-radius: 10px;
-    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+    --color-primary: #F8F6F0;
+    --color-secondary: #F0EEE6;
+    --color-accent: #B3BFB9;
+    --color-text: #938A83;
+    --color-background: #1F1F1F;
+    --text-light: #F8F6F0;
+    --text-dark: #1F1F1F;
+    --background-light: #F8F6F0;
+    --background-dark: #1F1F1F;
+  }
+  

@@ -47,9 +47,9 @@ function Footer() {
 
           <div className="footer-contact">
             <h3>Contact Us</h3>
-            <p>Email: info@jktours.com</p>
+            <p>Email: mehvishkanha192@gmail.com</p>
             <p>Phone: +91 7581 867478</p>
-            <p>Address: [Your Company Address Here]</p>
+            <p>Address: Mocha Kanha ,mandla , mp</p>
           </div>
         </div>
 

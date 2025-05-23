@@ -17,8 +17,10 @@ const DestinationSlider = ({ destinations }) => {
       destinations[currentIndex],
       destinations[(currentIndex + 1) % destinations.length],
       destinations[(currentIndex + 2) % destinations.length],
+      destinations[(currentIndex + 3) % destinations.length],
+
     ]; 
-  };
+  }; 
 
   return (
     <div className="slider-container">

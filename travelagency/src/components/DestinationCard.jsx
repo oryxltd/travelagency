@@ -30,7 +30,7 @@ const DestinationCard = ({ image, name, details, rating, id }) => {
     </div>
   </div>
 </div>
-
+ 
   );
 };
 

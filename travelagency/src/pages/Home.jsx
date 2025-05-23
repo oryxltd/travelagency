@@ -2,98 +2,40 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import "../pages/home.css";
-import tempImg from "../assets/images/tempImg.jpg";
-// import safari from "../assets/images/safari.jpg";
+import panna2 from "../assets/images/panna2.jpg";
 import Button from "../components/Button";
 import DestinationSlider from "../components/DestinationSlider";
-// import PackageCard from "../components/PackageCard";
-import PackageSlider from "../components/PackageSlider";
 import WhyChooseUs from "../components/WhyChooseUs";
 import Footer from "../components/Footer";
-import { FaGlobeAmericas, FaTags } from "react-icons/fa";
+import { FaGlobeAmericas, FaTags, FaPlane } from "react-icons/fa";
+import kanha from "../assets/images/kanha.jpg"; 
+import badhavghar from "../assets/images/badhavghar.jpg";
+import pench from "../assets/images/pench.jpg";
+import panna from "../assets/images/panna.jpg";
+import g1 from "../assets/images/g1.jpg";
+import g2 from "../assets/images/g2.jpg";
+import g3 from "../assets/images/g3.jpg";
+import g4 from "../assets/images/g4.jpg";
+import g5 from "../assets/images/g5.jpg";
+ 
+
 
 const destinations = [
   {
-    image:
-      "https://plus.unsplash.com/premium_photo-1672762542894-caaa8d4f0a77?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
-    name: "Destination 1",
-    price: "$1000",
-    details: "Details about destination 1",
+    image: kanha,
+    name: "Kanha Park",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1638135644120-5f024c0dcae7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
-    name: "Destination 2",
-    price: "$2000",
-    details: "Details about destination 2",
+    image: badhavghar,
+    name: "Badhavghar National Park",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1735668219806-7ee1de68b969?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
-    name: "Destination 3",
-    price: "$3000",
-    details: "Details about destination 3",
+    image: pench,
+    name: "Pench Park",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1735668219806-7ee1de68b969?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
-    name: "Destination 3",
-    price: "$3000",
-    details: "Details about destination 3",
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1735668219806-7ee1de68b969?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
-    name: "Destination 3",
-    price: "$3000",
-    details: "Details about destination 3",
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1735668219806-7ee1de68b969?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
-    name: "Destination 3",
-    price: "$3000",
-    details: "Details about destination 3",
-  },
-];
-
-//  // image, DistrictName, MainLocationName, DurationinDays, StartDate
-const packages = [
-  {
-    image:
-      "https://plus.unsplash.com/premium_photo-1672762542894-caaa8d4f0a77?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
-    DistrictName: "Premium",
-    MainLocationName: "Destination 1",
-
-    DurationinDays: "$4",
-    StartDate: "2022-08-15",
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1638135644120-5f024c0dcae7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
-    DistrictName: "Standard",
-    MainLocationName: "Destination 2",
-
-    DurationinDays: "3",
-    StartDate: "2022-08-15",
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1735668219806-7ee1de68b969?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
-    DistrictName: "Basic",
-    MainLocationName: "Destination 3",
-
-    DurationinDays: "4",
-    StartDate: "2022-08-15",
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1735668219806-7ee1de68b969?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8NGslMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D",
-    DistrictName: "ON demand",
-    MainLocationName: "Destination 4",
-
-    DurationinDays: "2",
-    StartDate: "2022-08-15",
+    image: panna,
+    name: "Panna Park",
   },
 ];
 
@@ -114,9 +56,6 @@ function Home() {
               across the india's most iconic Destinations
             </p>
             <div className="heroContent-btn">
-              {/* <button className="book-btn">
-                <a href="/contact">Book Now</a>
-              </button> */}
               <Link to="/inquiry" className="book-btn">
                 <button>Book Now</button>
               </Link>
@@ -126,12 +65,40 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="upcoming-features">
-                
+        {/* hero featuers */}
+        <div className="hero-features">
+          <div className="hero-feature_card hero-feature_card1">
+            <div className="hero-feature_icon">
+              <FaPlane className="feature-icon" />
+            </div>
+            <h4 className="feature-card_heading">Best Deals</h4>
+            <p className="feature-card_description">
+              We provide different types of tour plans.
+            </p>
+          </div>
+          <div className="hero-feature_card hero-feature_card2">
+            <div className="hero-feature_icon">
+              <FaPlane className="feature-icon" />
+            </div>
+            <h4 className="feature-card_heading">Best Deals</h4>
+            <p className="feature-card_description">
+              We provide different types of tour plans.
+            </p>
+          </div>
+          <div className="hero-feature_card hero-feature_card3">
+            <div className="hero-feature_icon">
+              <FaPlane className="feature-icon" />
+            </div>
+            <h4 className="feature-card_heading">Best Deals</h4>
+            <p className="feature-card_description">
+              We provide different types of tour plans.
+            </p>
+          </div>
         </div>
+        {/* about content */}
         <div className="about-content">
-          <div className="about-imagePart ">
-            <img src={tempImg} alt="" />
+          <div className="about-imagePart">
+            <img src={panna2} alt="" />
           </div>
           <div className="about-typoPart">
             <h4 className="subheading ">About Us</h4>
@@ -171,15 +138,31 @@ function Home() {
             <DestinationSlider destinations={destinations} />
           </div>
 
-          <h5 className="home_destination-heading">Packages</h5>
+          <h5 className="home_destination-heading">Image Gallery</h5>
           <p className="home_destination-description">
             Discover the World iconic destination with our exeoptional packages{" "}
             <br />
             offering unparallel experience , personlised iternerraies and
             unforgettable memories
           </p>
-          <div className="package-cards-container">
-            <PackageSlider packages={packages} />
+
+          <div class="GalleryGrid-container">
+            <div class="item item-1">
+              <img src={g1} alt="national park" />
+            </div>
+            <div class="item item-2">
+              <img src={g2} alt="national park" />
+            </div>
+            <div class="item item-3">
+              <img src={g3} alt="national park" />
+            </div>
+            <div class="item item-4">
+              <img src={g4} alt="national park" />
+            </div>
+            <div class="item item-5">
+              <img src={g5} alt="national park" />
+            </div>
+            
           </div>
         </div>
 

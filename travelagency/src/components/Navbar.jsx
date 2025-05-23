@@ -18,7 +18,7 @@ export default function Navbar() {
   // hide funtion
   const [hidden, setHidden] = useState(false);
   const [lastScrollTop, setLastScrollTop] = useState(0);
-
+ 
   // scrolled function
   const [scrolled] = useState(false);
 
