@@ -101,7 +101,7 @@ function Home() {
             <img src={panna2} alt="" />
           </div>
           <div className="about-typoPart">
-            <h4 className="subheading ">About Us</h4>
+            <h4 className="subheading">About Us</h4>
             <h1 className=".second-heading about-mainheading">
               The Story Behind Our Journeys
             </h1>
@@ -176,7 +176,7 @@ function Home() {
             </p>
             <button className="features-btn">
               {" "}
-              <a href="/contact">Learn More</a>
+              <a href="/contact">Learn More</a> 
             </button>
           </div>
         </div>
