@@ -182,7 +182,7 @@ function Home() {
         </div>
         <div className="features-content">
           <WhyChooseUs />
-        </div>
+        </div> 
         <Footer />
       </div>
     </div>

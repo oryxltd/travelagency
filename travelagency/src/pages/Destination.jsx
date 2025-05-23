@@ -17,7 +17,7 @@ const Destination = () => {
         </div>
 
         <div className="explore-destinations">
-          <h2>Explore All Destinations</h2>
+          <h2>Explore All Destinations</h2> 
           <p>
             It's a well-known truth that travelers often get sidetracked by
             enticing travel <br /> packages. The allure of a great deal can

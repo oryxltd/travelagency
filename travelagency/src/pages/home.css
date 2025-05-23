@@ -614,7 +614,7 @@
   grid-template-rows: 250px 250px; /* Set fixed row height */
   grid-gap: 15px;
   box-sizing: border-box;
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 
 .item {
@@ -712,7 +712,7 @@
   background-size: cover;
   background-position: center;
   /* overflow: hidden; */
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .overlay {

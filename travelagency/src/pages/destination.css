@@ -1,12 +1,13 @@
 .destination-container {
-    border: 2px solid red;
-    margin: 60px 2rem 0 2rem;
+    /* border: 2px solid red; */
+    margin: 60px 2rem 0 2rem;;
 }
 
 .destination-content_page {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     height: 60vh;
     width: 100%;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;

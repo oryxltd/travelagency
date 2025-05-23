@@ -13,7 +13,7 @@
   
   .contact__container {
     padding: 10px 20px;
-    border: 2px solid red;
+    /* border: 2px solid red;  */
   }
   
   /* About Us Section */
@@ -28,21 +28,21 @@
     flex-wrap: wrap;
     gap: 20px;
     height: 75vh;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     padding: 2.5rem;
   }
   
   .about__image {
-    border: 2px solid green;
-    height: 100%; /* Ensure the parent container takes full height */
-    width: 50%; /* Adjust width as needed */
+    /* border: 2px solid green; */
+    height: 100%;
+    width: 50%; 
 
   }
   
   .about__image img {
-    width: 100%; /* Make the image fill the container width */
-    height: 100%; /* Make the image fill the container height */
-    object-fit: cover; /* Ensure the image covers the container without distortion */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
@@ -164,7 +164,7 @@
   /* About Content Section */
 
   .aboutContent__section{
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     padding: 2.5rem;
   }
 
@@ -231,7 +231,7 @@
 
   /* FAQ Section */
   .faqSection{
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     padding: 2.5rem;
   }
   .faq__heading {
@@ -263,8 +263,8 @@
   
   .faq__item--expanded {
     background-color: #f1f1f1;
-    max-height: 500px; /* Set a large enough value to accommodate expanded content */
-    padding-bottom: 20px; /* Add extra padding when expanded */
+    max-height: 500px; 
+    padding-bottom: 20px; 
   }
 
   .faq__question-container{
@@ -375,13 +375,13 @@
 
     /* Contact Section  start*/
     .contactUs__section{
-        border: 2px solid orange;
+        /* border: 2px solid orange;s */
         padding: 2.5rem 0;
     }
 
 
     .contactHero__content{
-        border: 2px solid pink;
+        /* border: 2px solid pink; */
         background-image: url('https://rb.gy/0uhmr5');
         background-size: 100% 100%;
         background-position: center;
@@ -486,7 +486,7 @@
 
     /* get in touch & contact form */
     .contactContent__container{
-      border: 2px solid red;
+      /* border: 2px solid red; */
       display: flex;
       flex-direction: row;
       padding: 1.5rem;
@@ -494,7 +494,7 @@
     }
 
     .contactContent__left{
-      border: 2px solid rgb(47, 226, 53);
+      /* border: 2px solid rgb(47, 226, 53); */
       width: 40%;
       padding: 1rem;
     }
