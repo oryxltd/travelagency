@@ -8,10 +8,6 @@ import DestinationSlider from "../components/DestinationSlider";
 import WhyChooseUs from "../components/WhyChooseUs";
 import Footer from "../components/Footer";
 import { FaGlobeAmericas, FaTags, FaPlane } from "react-icons/fa";
-// import kanha from "../assets/images/kanha.jpg"; 
-// import badhavghar from "../assets/images/badhavghar.jpg";
-// import pench from "../assets/images/pench.jpg";
-// import panna from "../assets/images/panna.jpg";
 import g1 from "../assets/images/g1.jpg";
 import g2 from "../assets/images/g2.jpg";
 import g3 from "../assets/images/g3.jpg";
@@ -191,16 +187,3 @@ function Home() {
 }
 
 export default Home;
-
-/*
-   hero section 
-    main div -> 2 div 
-
-    1st div -> sub-head , heading , para , div -> 2 button
-
-   about section
-
-   destination section
-
-   key features section
-*/
