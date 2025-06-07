@@ -8,36 +8,37 @@ import DestinationSlider from "../components/DestinationSlider";
 import WhyChooseUs from "../components/WhyChooseUs";
 import Footer from "../components/Footer";
 import { FaGlobeAmericas, FaTags, FaPlane } from "react-icons/fa";
-import kanha from "../assets/images/kanha.jpg"; 
-import badhavghar from "../assets/images/badhavghar.jpg";
-import pench from "../assets/images/pench.jpg";
-import panna from "../assets/images/panna.jpg";
+// import kanha from "../assets/images/kanha.jpg"; 
+// import badhavghar from "../assets/images/badhavghar.jpg";
+// import pench from "../assets/images/pench.jpg";
+// import panna from "../assets/images/panna.jpg";
 import g1 from "../assets/images/g1.jpg";
 import g2 from "../assets/images/g2.jpg";
 import g3 from "../assets/images/g3.jpg";
 import g4 from "../assets/images/g4.jpg";
 import g5 from "../assets/images/g5.jpg";
  
+import destinations from "../data/parks";
 
 
-const destinations = [
-  {
-    image: kanha,
-    name: "Kanha Park",
-  },
-  {
-    image: badhavghar,
-    name: "Badhavghar National Park",
-  },
-  {
-    image: pench,
-    name: "Pench Park",
-  },
-  {
-    image: panna,
-    name: "Panna Park",
-  },
-];
+// const destinations = [
+//   {
+//     image: kanha,
+//     name: "Kanha Park",
+//   },
+//   {
+//     image: badhavghar,
+//     name: "Badhavghar National Park",
+//   },
+//   {
+//     image: pench,
+//     name: "Pench Park",
+//   },
+//   {
+//     image: panna,
+//     name: "Panna Park",
+//   },
+// ];
 
 function Home() {
   return (

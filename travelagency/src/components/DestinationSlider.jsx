@@ -27,12 +27,13 @@ const DestinationSlider = ({ destinations }) => {
       <div className="slider-track" >
         {getVisibleCards().map((destinations, index) => (
             <DestinationCard 
-                key={index}
+                key={destinations.id ||index}
+                id={destinations.id}
                 image={destinations.image} 
                 name={destinations.name}
                 details={destinations.details} 
                 rating={destinations.rating}
-            />
+            /> 
         ))}
       </div>
     </div>
@@ -40,3 +41,4 @@ const DestinationSlider = ({ destinations }) => {
 };
 
 export default DestinationSlider;
+
